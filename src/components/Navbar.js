@@ -14,7 +14,7 @@ const Navbar = (props) => {
 
 
   return (
-    <div className='flex justify-between items-center w-11/12 max-w-[1160px] py-4 mx-auto'>
+    <div className='flex  bg-richblack-900 justify-between items-center w-11/12 max-w-[1160px] py-4 mx-auto'>
 
       <Link to="/">
           <img src={logo} alt="logo" width={160} height={32} loading='lazy' />
@@ -22,18 +22,18 @@ const Navbar = (props) => {
 
         
         <nav className='text-richblack-100 flex gap-x-6'>
-          <ul className='flex gap-3'>
+          <ul className='flex gap-6'>
 
              <li>
-               <Link to="/">Home</Link>
+               <Link to="/" className='text-xl font-semibold'>Home</Link>
              </li>
 
               <li>
-               <Link to="/">About</Link>
+               <Link to="/about" className='text-xl font-semibold'>About</Link>
              </li>
 
              <li>
-               <Link to="/">Contact</Link>
+               <Link to="/contact" className='text-xl font-semibold'>Contact</Link>
              </li>
 
           </ul>
@@ -71,10 +71,10 @@ const Navbar = (props) => {
              <Link to="/">
 
                 <button onClick={()=>{
-                                      setLoggedIn(false);
-                                      toast.success("Logged Out")
-                                      }}
-                                       className='bg-richblack-800 text-richblack-100 py-[8px] 
+                  setLoggedIn(false);
+                  toast.success("Logged Out")
+                  }}
+                  className='bg-richblack-800 text-richblack-100 py-[8px] 
                     px-[12px] rounded-[8px] border border-richblack-700'>
                                       
                     Logout

@@ -6,6 +6,8 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import { useState } from "react";
+import Contact from "./components/Contact";
+import About from "./pages/About";
 
 function App() {
 
@@ -21,9 +23,13 @@ function App() {
 
        <Routes>
           <Route path="/" element={<Home></Home>}/>
+          
+
            <Route path="/login" element={<Login setIsLoggedIn={setLoggedIn}></Login>}/>
             <Route path="/signup" element={<Signup setIsLoggedIn={setLoggedIn}></Signup>}/>
              <Route path="/dashboard" element={<Dashboard></Dashboard>}/>
+             <Route path="/contact" element={<Contact></Contact>}/>
+             <Route path="/about" element={<About></About>}/>
 
        </Routes>
 

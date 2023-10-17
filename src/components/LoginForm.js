@@ -31,7 +31,7 @@ const LoginForm = ({setIsLoggedIn}) => {
   return (
 
     <form onSubmit={SubmitHandler} 
-         className="flex flex-col w-full gap-y-4 mt-6"
+         className="flex flex-col w-full  h-110vh  gap-y-4 mt-6"
     >
 
          <label className='w-full'>
@@ -65,7 +65,7 @@ const LoginForm = ({setIsLoggedIn}) => {
          </label>
    
        <button className='bg-yellow-50 rounded-[8px] font-medium text-richblack-900 px-[12px] py-[8px] mt-6'>
-            Sign in/</button>
+            Sign in</button>
 
       
     </form> 
